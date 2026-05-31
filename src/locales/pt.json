@@ -1,0 +1,581 @@
+{
+    "translation": {
+        "common": {
+            "save": "Guardar Alterações",
+            "save_success": "Definições guardadas com sucesso!",
+            "save_error": "Ocorreu um erro ao guardar as definições.",
+            "cancel": "Cancelar",
+            "delete": "Eliminar",
+            "edit": "Editar",
+            "add": "Adicionar",
+            "close": "Fechar",
+            "loading": "A carregar...",
+            "search": "Procurar...",
+            "actions": "Ações",
+            "status": "Estado",
+            "share": "Partilhar",
+            "unknown": "Desconhecido",
+            "date": "Data",
+            "name": "Nome",
+            "unit": "Unidade",
+            "property": "Local",
+            "resident": "Residente",
+            "super_admin": "Admin. Principal",
+            "version": "Versão",
+            "push_notifications": {
+                "doorbell_title": "Campainha Hello 🔔",
+                "doorbell_body": "{{name}} está à porta da unidade {{unit}}.",
+                "someone": "Alguém",
+                "some_unit": "uma unidade"
+            },
+            "subscription": {
+                "expiring_soon": "A sua subscrição Pro termina em {{days}} dias.",
+                "expired": "A sua subscrição Pro expirou. Renove para manter o acesso total.",
+                "renew_now": "Renovar Agora",
+                "email_reminder": "Usa o mesmo e-mail no Buy Me a Coffee para ativação automática."
+            }
+        },
+        "nav": {
+            "home": "Dashboard",
+            "visitors": "Visitantes",
+            "residents": "Colaboradores",
+            "properties": "Locais",
+            "events": "Eventos",
+            "devices": "Dispositivos",
+            "notifications": "Notificações",
+            "account": "Conta",
+            "settings": "Ajustes",
+            "logout": "Sair",
+            "main_navigation": "Navegação Principal",
+            "features": "Funcionalidades",
+            "pricing": "Suporte",
+            "login": "Entrar",
+            "get_started": "Começar Agora",
+            "help": "Ajuda"
+        },
+        "dashboard": {
+            "title": "Painel de Controlo",
+            "welcome": "Bem-vindo, {{name}}",
+            "subtitle": "Gestão de acessos em tempo real com a nova interface Bento Hello.",
+            "stats": {
+                "total_visits": "Total de Visitas",
+                "approved": "Autorizados",
+                "pending": "Pendentes",
+                "pending_desc": "Visitantes a aguardar aprovação",
+                "properties": "Propriedades Ativas",
+                "heritage": "Património",
+                "active_properties": "Propriedades Ativas",
+                "success_rate": "Taxa de Sucesso",
+                "system_stable": "Sistema Estável",
+                "attended": "Atendidos",
+                "not_attended": "Não Atendidos"
+            },
+            "activity": {
+                "daily": "Atividade Diária",
+                "realtime": "Estado em tempo real",
+                "location": "Local",
+                "title": "Atividade Recente",
+                "view_all": "Ver Tudo",
+                "no_activity": "Sem atividade recente",
+                "view_queue": "Ver Fila",
+                "manage_portfolio": "Gerir Portfolio",
+                "collaborators": "Colaboradores",
+                "active_management": "Gestão Ativa",
+                "total_visitors": "Total de Visitantes",
+                "units": "Unidades Ativas",
+                "properties": "Propriedades Ativas",
+                "manage_access": "Gerir Acessos",
+                "locations": "Locais"
+            },
+            "widgets": {
+                "clock": "Relógio Local",
+                "weather": "Meteorologia",
+                "location": "Localização",
+                "humidity": "Humidade",
+                "wind": "Vento",
+                "feels_like": "Sensação Térmica",
+                "updated": "Atualizado agora"
+            },
+            "system": {
+                "stable": "Plataforma Online"
+            }
+        },
+        "visitors": {
+            "title": "Pessoas à Porta",
+            "subtitle": "Gestão de acessos e monitorização de segurança em tempo real.",
+            "tabs": {
+                "active": "Em Direto",
+                "history": "Histórico",
+                "active_queue": "Fila de Acessos Ativos",
+                "entry_history": "Histórico de Entradas",
+                "export": "Exportar Dados",
+                "export_filename": "historico_visitantes",
+                "status_info": "Informação do Sistema",
+                "retention_notice": "Retenção de Dados: Os registos de visitas são eliminados automaticamente após 3 meses para garantir a privacidade e o desempenho do sistema.",
+                "finish_all": "Terminar Todos",
+                "offline_messages": "Mensagens Recebidas"
+            },
+            "status": {
+                "pending": "Em espera",
+                "approved": "Autorizado",
+                "rejected": "Recusado",
+                "completed": "Concluído",
+                "waiting": "A aguardar"
+            },
+            "activity": {
+                "no_activity": "Nenhum registo à porta hoje",
+                "no_activity_desc": "Quando um visitante ler o QR Code do local e tocar a campainha, aparecerá aqui.",
+                "no_history": "Sem histórico registado",
+                "no_history_desc": "Ainda não existem visitas finalizadas no sistema.",
+                "finish_all_confirm": "Tem a certeza que deseja finalizar e arquivar todas as visitas ativas da fila?"
+            },
+            "table": {
+                "visitor": "Visitante",
+                "destination": "Destino",
+                "status": "Estado",
+                "action": "Ação"
+            },
+            "chat": {
+                "placeholder": "Escrever Mensagem...",
+                "call": "Ligar",
+                "start_video": "INICIAR VÍDEO",
+                "finish": "Finalizar e Arquivar",
+                "back_to_chat": "Voltar ao Chat",
+                "waiting_at": "A aguardar em",
+                "ice_breaker": "Envia uma mensagem para iniciar o contacto.",
+                "video_started": "Chamada de Vídeo Iniciada",
+                "p2p_encrypted": "Sala encriptada P2P ativada",
+                "enter_room": "Entrar na Sala Visual",
+                "you": "Tu",
+                "reject": "Recusar",
+                "approve": "Aprovar Acesso",
+                "finish_and_archive": "Finalizar e Arquivar",
+                "visit_completed": "Visita Concluída",
+                "history": "Histórico"
+            }
+        },
+        "invites": {
+            "title": "Convites e Acessos Digitais",
+            "subtitle": "Gerar passes de entrada e partilhar chaves digitais via Código QR.",
+            "new": "Novo Convite",
+            "form": {
+                "visitor_name": "Nome do Visitante",
+                "permanent_access": "Acesso Permanente",
+                "valid_until": "Válido Até",
+                "generate_pass": "Gerar Passe Digital",
+                "visitor_name_placeholder": "Ex: João Silva",
+                "details": "Detalhes do Visitante",
+                "destination": "Destino",
+                "error_generating": "Erro ao gerar convite. Verifique o sistema."
+            },
+            "success": {
+                "title": "Convite Gerado com Sucesso!",
+                "subtitle": "Partilha o link abaixo com o teu visitante.",
+                "copy_link": "Copiar Link",
+                "link_copied": "Link Copiado",
+                "new_invite": "Gerar Outro"
+            },
+            "activity": {
+                "not_generated_title": "Código QR não gerado",
+                "not_generated_desc": "Preenche os dados do visitante no formulário à esquerda para gerar o passe de acesso único.",
+                "pass_ready": "Passe Pronto",
+                "usage_desc": "O visitante lê o QR Code ou abre o link no telemóvel para aceder ao Local.",
+                "direct_link": "Link Direto para o Visitante",
+                "localhost_warning": "⚠️ Nota: Em localhost o QR Code só funciona em PC. No telemóvel, usa um URL público."
+            }
+        },
+        "residents": {
+            "title": "Gestão de Membros",
+            "subtitle": "Administra os acessos e administradores do teu local.",
+            "add_member": "Adicionar Membro",
+            "no_residents": "Nenhum residente associado",
+            "no_residents_desc": "Atualmente apenas o Admin. Principal tem acesso.",
+            "unknown_org": "Acesso Desconhecido",
+            "wait_association": "Aguarde pela associação com um sistema de acesso.",
+            "delete_confirm": "Tens a certeza que desejas remover este acesso? (Esta ação apenas desvincula o residente do teu Local)",
+            "delete_error": "Erro ao remover residente.",
+            "table": {
+                "name": "Nome do Membro",
+                "role": "Cargo / Acesso",
+                "accesses": "Acessos",
+                "email": "Endereço de Email",
+                "phone": "Contacto",
+                "action": "Ação",
+                "revoke_access": "Revogar Acesso"
+            },
+            "role": {
+                "admin": "Administrador",
+                "resident": "Residente"
+            },
+            "access": {
+                "total": "Acesso Total",
+                "link_invite": "Convite por link"
+            },
+            "invite_status": "Pendente (Convite)",
+            "modal": {
+                "title": "Adicionar Novo Membro",
+                "share_title": "Partilhar Convite",
+                "share_desc": "Partilha este link com o novo membro da equipa:",
+                "whatsapp": "Enviar por WhatsApp",
+                "whatsapp_message": "Olá! Convido-te a juntares-te à minha equipa no Hello DOOR BELL. Podes registar-te através deste link: {{link}}",
+                "email": "Enviar por Email",
+                "email_subject": "Convite para Hello DOOR BELL",
+                "email_body": "Olá!\n\nFoste convidado para te juntares à equipa do Hello DOOR BELL.\n\nRegista-te aqui para começares: {{link}}\n\nAté breve!",
+                "copy": "Copiar Link Direto",
+                "done": "Concluído",
+                "new_link_title": "Novo Link Único",
+                "new_link_desc": "Clica no botão baixo para gerar um link seguro que poderás enviar por WhatsApp ou Email.",
+                "generate_btn": "Gerar Link de Convite",
+                "email_label": "Endereço de Email",
+                "email_placeholder": "Ex: utilizador@exemplo.com",
+                "role_label": "Nível de Acesso",
+                "submit": "Adicionar Membro",
+                "success": "Membro adicionado com sucesso!",
+                "invite_success": "Link de convite gerado com sucesso!",
+                "error": "Erro ao adicionar membro. Verifica se tem uma conta Hello.",
+                "invite_error": "Erro ao gerar convite.",
+                "delete_invite_confirm": "Tem a certeza que deseja cancelar este link de convite?",
+                "not_found": "Utilizador não encontrado. Deve registar-se primeiro."
+            }
+        },
+        "units": {
+            "title": "Unidades de Acesso",
+            "subtitle": "Gere os espaços de acesso (ex: Porta Principal, Garagem, Anexo).",
+            "list_title": "Pontos de Acesso",
+            "new_unit": "Novo Ponto de Acesso",
+            "edit": "Mudar Nome",
+            "delete": "Terminar",
+            "qr_btn": "Gerar QR",
+            "form": {
+                "name_label": "Nome (ex: Porta Frente, Apto 101)",
+                "name_placeholder": "Indique o ponto de acesso",
+                "submit": "Criar Acesso"
+            },
+            "status": {
+                "validated": "Ponto de Entrada Validado"
+            },
+            "empty": {
+                "title": "Sem acessos criados",
+                "desc": "Para gerar os convites QR Premium, primeiro tens de definir a hierarquia de locais (ex: \"Porta 12\" ou \"Garagem Sul\")."
+            },
+            "modal": {
+                "title": "QR Code Permanente",
+                "desc": "Cola este código no local físico. Qualquer pessoa que o ler poderá identificar-se e tocar a campainha.",
+                "link_label": "Link Direto",
+                "print": "Imprimir Cartaz Agora",
+                "copy_btn": "Copiar Link de Acesso",
+                "copy_success": "Link copiado para a área de transferência!",
+                "link_copied": "Link copiado para a área de transferência!"
+            },
+            "limit_reached": "Limite do plano gratuito atingido (1 ponto de acesso por local). Faça upgrade para adicionar mais!"
+        },
+        "settings": {
+            "title": "Ajustes",
+            "subtitle": "Personaliza a tua experiência e configura as preferências do sistema.",
+            "sections": {
+                "profile": "O Meu Perfil",
+                "appearance": "Aparência",
+                "notifications": "Notificações",
+                "qr_print": "Impressão QR",
+                "brand": "Minha Marca"
+            },
+            "profile": {
+                "photo": "Foto de Perfil",
+                "upload_desc": "PNG ou JPG até 2MB",
+                "full_name": "Nome Completo",
+                "phone": "Telemóvel",
+                "role": "Cargo / Permissões"
+            },
+            "appearance": {
+                "theme": "Tema",
+                "dark": "Escuro",
+                "dark_desc": "Visual Original",
+                "light": "Claro",
+                "light_desc": "Visual Clean",
+                "system": "Sistema",
+                "system_desc": "Sincronização Auto",
+                "language": "Idioma do Sistema"
+            },
+            "notifications": {
+                "doorbell_sound": "Som da Campainha",
+                "push": "Notificações Push",
+                "push_desc": "Recebe alertas de visitas mesmo com o browser fechado.",
+                "email": "Notificações por E-mail",
+                "email_desc": "Recebe um resumo das visitas no teu e-mail.",
+                "sound_title": "Som da Campainha",
+                "whatsapp": "Alertas WhatsApp",
+                "whatsapp_desc": "Notificação instantânea no telemóvel",
+                "sounds": {
+                    "classic": "Hello Classic",
+                    "modern": "Moderna",
+                    "digital": "Digital",
+                    "premium": "Premium"
+                }
+            },
+            "qr_print": {
+                "pro_tip_title": "Dica de Pro",
+                "pro_tip_desc": "O template escolhido será aplicado automaticamente a todos os cartazes QR que imprimires na secção de Unidades. Podes mudar de template a qualquer momento sem afetar os códigos já impressos.",
+                "templates": {
+                    "classic": {
+                        "label": "Classic Hello",
+                        "desc": "Design limpo com bordas azuis proeminentes."
+                    },
+                    "dark": {
+                        "label": "Midnight Premium",
+                        "desc": "Elegância em fundo escuro com detalhes azul néon."
+                    },
+                    "minimal": {
+                        "label": "Modern Minimal",
+                        "desc": "Foco total no QR Code com design escandinavo."
+                    },
+                    "mini_cards": {
+                        "label": "Cartões Pequenos",
+                        "desc": "Grelha de mini-cartões para caixas de correio ou campainha."
+                    },
+                    "corporate": {
+                        "label": "Corporate Blue",
+                        "desc": "Layout estruturado para escritórios e empresas."
+                    }
+                }
+            }
+        },
+        "properties": {
+            "title": "Locais",
+            "subtitle": "Gere os teus edifícios, condomínios ou espaços de escritório.",
+            "add_btn": "Novo Local",
+            "modal": {
+                "title": "Novo Local",
+                "description": "Define o nome do teu novo prédio ou espaço de gestão. Poderás associar unidades e residentes logo a seguir.",
+                "label": "Nome da Propriedade",
+                "placeholder": "Ex: Edifício Atlântico, Condomínio Foz...",
+                "cancel": "Cancelar",
+                "submit": "Registar Local"
+            },
+            "stats": {
+                "title": "Ainda sem locais registados",
+                "subtitle": "O teu sistema precisa de pelo menos um local para começar a registar unidades e visitantes. Criamos um agora?"
+            },
+            "errors": {
+                "no_org": "A preparar o teu sistema de acesso. Por favor, aguarda uns segundos.",
+                "add_failed": "Não foi possível criar o local. Por favor, tenta novamente!"
+            },
+            "limit_reached": "Limite do plano gratuito atingido (1 local). Faça upgrade para adicionar mais!",
+            "upgrade_pro": "Obter Plano Pro",
+            "total_locations": "Total de Locais",
+            "access_point": "Ponto de Acesso",
+            "access_points": "Pontos de Acesso",
+            "manage_access_points": "Gerir Pontos de Acesso",
+            "add_location": "Adicionar Local"
+        },
+        "qr_print": {
+            "scan_to_enter": "Digitalize para Entrar",
+            "scan_instruction": "Aponte a câmara do telemóvel para o código QR para se identificar e tocar a campainha.",
+            "learn_more": "Saiba mais em",
+            "powered_by": "Powered By",
+            "intelligence_by": "Inteligência by Hello",
+            "system_powered_by": "Sistema powered by",
+            "visitors": "Visitantes",
+            "visitors_instruction": "Leia o QR Code principal para tocar a campainha.",
+            "identify_to_enter": "Identifique-se para entrar",
+            "no_apps_no_wait": "Sem aplicações. Sem esperas.",
+            "scan_to_ring": "Digitalize para Tocar",
+            "point_camera": "Aponte a câmara para entrar ou tocar a campainha.",
+            "secure_flow": "Fluxo Seguro com Encriptação P2P",
+            "contact_instruction": "Para me contactar por favor leia o código QR"
+        },
+        "visitor_page": {
+            "identify": "Identifique-se",
+            "notification_title": "Novo Visitante!",
+            "notification_body": "está a tocar à sua campainha.",
+            "status": {
+                "pending": "Pendente",
+                "waiting": "A aguardar",
+                "approved": "Aprovado",
+                "rejected": "Recusado",
+                "completed": "Concluído",
+                "history": "Histórico"
+            },
+            "at_location": "Está em",
+            "provide_name": "Por favor, indique o seu nome para avisar o residente.",
+            "your_name": "O seu nome...",
+            "announce": "Anunciar Chegada",
+            "hello": "Olá,",
+            "welcome_to": "Bem-vindo ao",
+            "access_point": "Ponto de Acesso:",
+            "ring_doorbell": "Tocar a Campainha",
+            "call_answered": "Chamada Atendida",
+            "waiting_response": "A aguardar resposta...",
+            "connection_active": "A ligação está ativa, escreva agora",
+            "leave_note": "Deixar Mensagem",
+            "note_placeholder": "Escreva aqui a sua nota para o residente...",
+            "send_note": "Enviar Nota",
+            "note_sent": "Mensagem enviada com sucesso!",
+            "note_error": "Erro ao enviar mensagem. Tente novamente.",
+            "video_pro_only": "Vídeochamada disponível apenas no Plano Pro",
+            "no_answer": "Ninguém atende?",
+            "no_answer_desc": "Parece que o residente não está disponível no momento.",
+            "leave_message_anyway": "Deixar uma mensagem"
+        },
+        "search": {
+            "suggestion": "Sugestão de Pesquisa",
+            "hint": "Podes pesquisar por",
+            "visitors": "Visitantes",
+            "collaborators": "Colaboradores",
+            "locations": "Locais"
+        },
+        "help": {
+            "title": "Dashboard | Ajuda & Tutorial",
+            "subtitle": "Aprende a tirar o máximo partido do Hello DOOR BELL num instante.",
+            "footer": "Todo o sistema opera em tempo real e utiliza encriptação ponta-a-ponta nos vídeos HD.",
+            "pwa_banner": {
+                "title": "📲 Instala a App no teu telemóvel",
+                "description": "A hello funciona como uma app nativa! Instala no teu telemóvel para receberes notificações de campainha e atenderes visitantes em qualquer lado.",
+                "step1": "Abrir no browser",
+                "step2": "Adicionar ao ecrã",
+                "step3": "Ativar notificações",
+                "install_btn": "Instalar Agora"
+            },
+            "step1": {
+                "title": "1. Gestão de Espaços",
+                "description": "O primeiro passo é definir onde as pessoas vão chegar. Cria o teu Local principal e depois adiciona as diferentes Unidades de Acesso (ex: Porta Principal, Portão da Garagem, Anexo).",
+                "tip": "Podes clicar no botão do \"Lápis\" junto ao nome dos espaços nas Tabelas para editar o seu nome a qualquer momento.",
+                "link": "Gerir Locais"
+            },
+            "step2": {
+                "title": "2. Partilhar o Controlo",
+                "description": "Não tens de gerir os acessos sozinho. Vai à área de Pessoas Guardadas para adicionares a tua família ou staff. Agora podes gerar um Link de Convite (Token) e enviá-lo por mensagem ou email — sem complicações!",
+                "tip": "A partilha via link é instantânea. O novo membro só precisa de abrir o URL e criar a sua password para entrar.",
+                "link": "Gerir Residentes"
+            },
+            "step3": {
+                "title": "3. Gerar Chaves Mágicas (QR)",
+                "description": "Dentro das páginas das tuas Unidades, clica num espaço e prime gerar Convite. Dá um nome ao Visitante e imprime ou envia-lhe o Código QR criado. É com ele que a pessoa fará \"Scan\" à porta para se anunciar.",
+                "link": "Ver as minhas Unidades"
+            },
+            "step4": {
+                "title": "4. Atender à Porta (Chat e Vídeo)",
+                "description": "Quando um visitante toca a campainha, ele aparece na tua lista de Pessoas à Porta. A interface é fluída e opera em tempo real.",
+                "bullet1": "Abre o Chat para interagires instantaneamente com o visitante.",
+                "bullet2": "Clica em 🎥 Ligar para iniciares a Videochamada Minimalista HD.",
+                "bullet3": "A interface de vídeo é limpa: foca-se apenas na imagem e no botão de desligar.",
+                "bullet4": "Termina clicando em Aprovar ou Recusar Acesso.",
+                "link": "Monitorizar Acessos"
+            },
+            "step5": {
+                "title": "5. App de Telemóvel (PWA)",
+                "description": "A HELLO é uma aplicação nativa disfarçada. Não precisas de App Store.",
+                "bullet1": "Abre o link deste painel no browser do telemóvel e prime Adicionar ao ecrã principal.",
+                "bullet2": "Permite o acesso a Notificações.",
+                "bullet3": "Sempre que a porta for ativada na rua, a App liga automaticamente o ecrã, vibra e emite um alerta sonoro no teu telemóvel!"
+            },
+            "step6": {
+                "title": "6. A perspectiva do Visitante",
+                "description": "Enquanto estás na sala, importa saber o que se passa na rua.",
+                "bullet1": "Sem Apps: O visitante apenas lê o QR que imprimiste (iOS/Android).",
+                "bullet2": "Capta uma selfie e entra na Sala de Espera digital.",
+                "bullet3": "Se tardares, ele tem um botão de 🔔 Tocar de novo (10s cooldown) que reenvia o alerta para o teu telemóvel."
+            }
+        },
+        "auth": {
+            "login": {
+                "title": "Bem-vindo de volta",
+                "subtitle": "Entra na tua conta Hello para gerires acessos.",
+                "google": "Entrar com Google",
+                "or_email": "Ou com email",
+                "email_label": "O teu Email",
+                "email_placeholder": "nome@exemplo.com",
+                "password_label": "Palavra-passe",
+                "password_placeholder": "••••••••",
+                "forgot_password": "Esqueceste-te da palavra-passe?",
+                "submit": "Entrar no Dashboard",
+                "no_account": "Ainda não tens conta?",
+                "create_account": "Cria uma conta gratuita",
+                "remember_me": "Manter-me ligado"
+            },
+            "register": {
+                "title": "Criar Nova Conta Hello",
+                "subtitle": "Ativa a tua campainha digital e começa a gerir acessos.",
+                "selected_plan": "Plano Selecionado",
+                "google": "Usar conta Google",
+                "or_email": "Ou por email",
+                "org_label": "O que estás a gerir?",
+                "org_placeholder": "Ex: Minha Casa / Prédio Solar",
+                "name_label": "O teu Nome",
+                "name_placeholder": "Primeiro Nome",
+                "email_label": "O teu Email",
+                "password_label": "Definir Palavra-passe",
+                "password_placeholder": "Mínimo 6 caracteres",
+                "submit": "Criar Conta Gratuita",
+                "have_account": "Já tens uma conta?",
+                "login": "Faz login aqui"
+            }
+        },
+        "landing": {
+            "hero": {
+                "badge": "Campainha Remota",
+                "title": "A tua campainha, em qualquer lado.",
+                "subtitle": "Atende a tua porta a partir do telemóvel, onde quer que estejas. Uma solução digital premium para casas e empresas, sem necessidade de hardware ou instalação complexa.",
+                "cta": "Começar Agora",
+                "secondary": "Como Funciona"
+            },
+            "features": {
+                "badge": "Porquê o hello?",
+                "title": "Simples. Digital. Remoto.",
+                "subtitle": "Substitui a tua campainha tradicional por uma solução inteligente que te acompanha para todo o lado.",
+                "card1": {
+                    "title": "Instalação Instantânea",
+                    "desc": "Imprime o teu Código QR hello e coloca-o na porta. O teu smartphone torna-se no teu intercomunicador pessoal."
+                },
+                "card2": {
+                    "title": "Vídeo e Voz",
+                    "desc": "Vê e fala com quem tocar à campainha em tempo real, com total privacidade."
+                },
+                "card3": {
+                    "title": "Histórico de Chamadas",
+                    "desc": "Sabe sempre quem te procurou, com registo de data e hora de cada chamada."
+                },
+                "card4": {
+                    "title": "App Dedicada",
+                    "desc": "Estejas onde estiveres, tens o Hello no teu bolso. Instala a nossa app PWA e recebe notificações ultra rápidas sempre que alguém tocar à porta.",
+                    "cta": "Experimentar Agora"
+                }
+            },
+            "cta": {
+                "title": "O teu espaço merece o melhor.",
+                "button": "Criar Conta Gratuita"
+            },
+            "support": {
+                "title_prefix": "Apoia o ",
+                "title_highlight": "Desenvolvimento",
+                "title_suffix": ".",
+                "description": "O Hello é mantido de forma independente. O teu apoio ajuda a manter os servidores ativos e a desenvolver novas funcionalidades.",
+                "button": "Apoia no Buy Me a Coffee"
+            },
+            "pricing": {
+                "badge": "Apoio",
+                "title": "Apoia o Desenvolvimento",
+                "subtitle": "O Hello é mantido de forma independente. O teu apoio ajuda a manter os servidores ativos.",
+                "cta": "Apoiar no Buy Me a Coffee"
+            },
+            "footer": {
+                "made_with": "Feito com",
+                "rights": "© 2026 Hello. Todos os direitos reservados."
+            }
+        },
+        "onboarding": {
+            "welcome_title": "Bem-vindo ao Hello!",
+            "welcome_desc": "Vamos configurar o teu primeiro local de acesso para começares a receber visitantes.",
+            "hint_properties": "Clica aqui para criares o teu primeiro Local (ex: Minha Casa).",
+            "hint_add_property": "Cria aqui o teu edifício ou espaço de gestão.",
+            "understood": "Entendido!"
+        },
+        "pwa": {
+            "install_btn": "Instalar App",
+            "install_title": "Instala a Hello no teu telemóvel",
+            "install_desc": "Atende a porta e recebe alertas instantâneos em qualquer lugar.",
+            "whatsapp_share": "Partilhar via WhatsApp",
+            "copy_link": "Copiar Link Direto",
+            "share_message": "Olá! Instala a app Hello Doorbell para atenderes a porta no teu telemóvel: "
+        }
+    }
+}

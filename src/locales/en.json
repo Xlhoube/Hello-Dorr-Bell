@@ -1,0 +1,580 @@
+{
+    "translation": {
+        "common": {
+            "save": "Save Changes",
+            "save_success": "Settings saved successfully!",
+            "save_error": "An error occurred while saving settings.",
+            "cancel": "Cancel",
+            "delete": "Delete",
+            "edit": "Edit",
+            "add": "Add",
+            "close": "Close",
+            "loading": "Loading...",
+            "search": "Search...",
+            "actions": "Actions",
+            "status": "Status",
+            "share": "Share",
+            "unknown": "Unknown",
+            "date": "Date",
+            "name": "Name",
+            "unit": "Unit",
+            "property": "Property",
+            "resident": "Resident",
+            "super_admin": "Super Admin",
+            "version": "Version",
+            "push_notifications": {
+                "doorbell_title": "Hello Doorbell 🔔",
+                "doorbell_body": "{{name}} is at the door of unit {{unit}}.",
+                "someone": "Someone",
+                "some_unit": "a unit"
+            },
+            "subscription": {
+                "expiring_soon": "Your Pro subscription ends in {{days}} days.",
+                "expired": "Your Pro subscription has expired. Renew to keep full access.",
+                "renew_now": "Renew Now",
+                "email_reminder": "Use the same App email on Buy Me a Coffee for instant activation."
+            }
+        },
+        "nav": {
+            "home": "Dashboard",
+            "visitors": "Visitors",
+            "residents": "Collaborators",
+            "properties": "Properties",
+            "events": "Events",
+            "devices": "Devices",
+            "notifications": "Notifications",
+            "account": "Account",
+            "settings": "Settings",
+            "logout": "Logout",
+            "main_navigation": "Main Navigation",
+            "features": "Features",
+            "pricing": "Support",
+            "login": "Login",
+            "get_started": "Get Started",
+            "help": "Help"
+        },
+        "dashboard": {
+            "title": "Control Panel",
+            "welcome": "Welcome, {{name}}",
+            "subtitle": "Real-time access management with the new Bento Hello interface.",
+            "stats": {
+                "total_visits": "Total Visits",
+                "approved": "Approved",
+                "pending": "Pending",
+                "pending_desc": "Visitors waiting for approval",
+                "properties": "Active Properties",
+                "heritage": "Heritage",
+                "active_properties": "Active Properties",
+                "success_rate": "Success Rate",
+                "system_stable": "System Stable",
+                "attended": "Attended",
+                "not_attended": "Not Attended"
+            },
+            "activity": {
+                "daily": "Daily Activity",
+                "realtime": "Real-time status",
+                "location": "Location",
+                "title": "Recent Activity",
+                "view_all": "View All",
+                "no_activity": "No recent activity",
+                "view_queue": "View Queue",
+                "manage_portfolio": "Manage Portfolio",
+                "collaborators": "Collaborators",
+                "active_management": "Active Management",
+                "total_visitors": "Total Visitors",
+                "units": "Active Units",
+                "properties": "Active Properties",
+                "manage_access": "Manage Access",
+                "locations": "Properties"
+            },
+            "widgets": {
+                "clock": "Local Clock",
+                "weather": "Weather",
+                "location": "Location",
+                "humidity": "Humidity",
+                "wind": "Wind",
+                "feels_like": "Feels Like",
+                "updated": "Updated now"
+            },
+            "system": {
+                "stable": "Platform Online"
+            }
+        },
+        "visitors": {
+            "title": "People at the Door",
+            "subtitle": "Access management and real-time security monitoring.",
+            "tabs": {
+                "active": "Live",
+                "history": "History",
+                "active_queue": "Active Access Queue",
+                "entry_history": "Entry History",
+                "export": "Export Data",
+                "export_filename": "visitor_history",
+                "status_info": "System Information",
+                "retention_notice": "Data Retention: Visit records are automatically deleted after 3 months to ensure privacy and system performance.",
+                "finish_all": "Finish All",
+                "offline_messages": "Received Messages"
+            },
+            "status": {
+                "pending": "Pending",
+                "approved": "Approved",
+                "rejected": "Rejected",
+                "completed": "Completed",
+                "waiting": "Waiting"
+            },
+            "activity": {
+                "no_activity": "No records at the door today",
+                "no_activity_desc": "When a visitor scans the QR Code and rings the bell, it will appear here.",
+                "no_history": "No recorded history",
+                "no_history_desc": "There are no completed visits in the system yet.",
+                "finish_all_confirm": "Are you sure you want to finish and archive all active visits from the queue?"
+            },
+            "table": {
+                "visitor": "Visitor",
+                "destination": "Destination",
+                "status": "Status",
+                "action": "Action"
+            },
+            "chat": {
+                "placeholder": "Write Message...",
+                "call": "Call",
+                "start_video": "START VIDEO",
+                "finish": "Finish and Archive",
+                "back_to_chat": "Back to Chat",
+                "waiting_at": "Waiting at",
+                "ice_breaker": "Send a message to start contact.",
+                "video_started": "Video Call Started",
+                "p2p_encrypted": "P2P Encrypted Room Active",
+                "enter_room": "Enter Visual Room",
+                "you": "You",
+                "reject": "Reject",
+                "approve": "Approve Access",
+                "finish_and_archive": "Finish and Archive",
+                "visit_completed": "Visit Completed",
+                "history": "History"
+            }
+        },
+        "invites": {
+            "title": "Invites and Digital Access",
+            "subtitle": "Generate entry passes and share digital keys via QR Code.",
+            "new": "New Invite",
+            "form": {
+                "visitor_name": "Visitor Name",
+                "permanent_access": "Permanent Access",
+                "valid_until": "Valid Until",
+                "generate_pass": "Generate Digital Pass",
+                "visitor_name_placeholder": "e.g. John Doe",
+                "details": "Visitor Details",
+                "destination": "Destination",
+                "error_generating": "Error generating invite. Check system."
+            },
+            "success": {
+                "title": "Invite Generated Successfully!",
+                "subtitle": "Share the link below with your visitor.",
+                "copy_link": "Copy Link",
+                "link_copied": "Link Copied",
+                "new_invite": "Generate Another"
+            },
+            "activity": {
+                "not_generated_title": "QR Code not generated",
+                "not_generated_desc": "Fill in the visitor details in the form on the left to generate the unique access pass.",
+                "pass_ready": "Pass Ready",
+                "usage_desc": "The visitor scans the QR Code or opens the link on their phone to access the Property.",
+                "direct_link": "Direct Link for Visitor",
+                "localhost_warning": "⚠️ Note: On localhost, the QR Code only works on PC. On mobile, use a public URL."
+            }
+        },
+        "residents": {
+            "title": "Member Management",
+            "subtitle": "Manage access and administrators of your property.",
+            "add_member": "Add Member",
+            "no_residents": "No associated residents",
+            "no_residents_desc": "Currently only the Super Admin has access.",
+            "unknown_org": "Unknown Access",
+            "wait_association": "Wait for association with an access system.",
+            "delete_confirm": "Are you sure you want to remove this access? (This action only disconnects the resident from your Property)",
+            "delete_error": "Error removing resident.",
+            "table": {
+                "name": "Member Name",
+                "role": "Role / Access",
+                "accesses": "Accesses",
+                "email": "Email Address",
+                "phone": "Contact",
+                "action": "Action",
+                "revoke_access": "Revoke Access"
+            },
+            "role": {
+                "admin": "Administrator",
+                "resident": "Resident"
+            },
+            "access": {
+                "total": "Total Access",
+                "link_invite": "Link invite"
+            },
+            "invite_status": "Pending (Invite)",
+            "modal": {
+                "title": "Add New Member",
+                "share_title": "Share Invite",
+                "share_desc": "Share this link with the new team member:",
+                "whatsapp": "Send via WhatsApp",
+                "whatsapp_message": "Hi! I invite you to join my team on Hello DOOR BELL. You can register through this link: {{link}}",
+                "email": "Send by Email",
+                "email_subject": "Invitation to Hello DOOR BELL",
+                "email_body": "Hi!\n\nYou've been invited to join the Hello DOOR BELL team.\n\nRegister here to get started: {{link}}\n\nSee you soon!",
+                "copy": "Copy Direct Link",
+                "done": "Done",
+                "new_link_title": "New Unique Link",
+                "new_link_desc": "Click the button below to generate a secure link to send via WhatsApp or Email.",
+                "generate_btn": "Generate Invite Link",
+                "email_label": "Email Address",
+                "email_placeholder": "e.g. user@example.com",
+                "role_label": "Access Level",
+                "submit": "Add Member",
+                "success": "Member added successfully!",
+                "invite_success": "Invite link generated successfully!",
+                "error": "Error adding member. Please check if they have a Hello account.",
+                "invite_error": "Error generating invite.",
+                "delete_invite_confirm": "Are you sure you want to cancel this invite link?",
+                "not_found": "User not found. They must register first."
+            }
+        },
+        "units": {
+            "title": "Access Units",
+            "subtitle": "Manage access areas (e.g. Main Door, Garage, Annex).",
+            "list_title": "Access Points",
+            "new_unit": "New Access Point",
+            "edit": "Rename",
+            "delete": "Finish",
+            "qr_btn": "Generate QR",
+            "form": {
+                "name_label": "Name (e.g. Front Door, Apt 101)",
+                "name_placeholder": "Indicate access point",
+                "submit": "Create Access"
+            },
+            "status": {
+                "validated": "Entry Point Validated"
+            },
+            "empty": {
+                "title": "No access created",
+                "desc": "To generate Premium QR invites, you first need to define the hierarchy of locations (e.g. \"Door 12\" or \"South Garage\")."
+            },
+            "modal": {
+                "title": "Permanent QR Code",
+                "desc": "Paste this code at the physical location. Anyone scanning it can identify themselves and ring the bell.",
+                "link_label": "Direct Link",
+                "print": "Print Poster Now",
+                "copy_btn": "Copy Access Link",
+                "copy_success": "Link copied to clipboard!",
+                "link_copied": "Link copied to clipboard!"
+            },
+            "limit_reached": "Free plan limit reached (1 access point per location). Upgrade to add more!"
+        },
+        "settings": {
+            "title": "Settings",
+            "subtitle": "Personalize your experience and configure system preferences.",
+            "sections": {
+                "profile": "My Profile",
+                "appearance": "Appearance",
+                "notifications": "Notifications",
+                "qr_print": "QR Printing",
+                "brand": "My Brand"
+            },
+            "profile": {
+                "photo": "Profile Photo",
+                "upload_desc": "PNG or JPG up to 2MB",
+                "full_name": "Full Name",
+                "phone": "Phone",
+                "role": "Role / Permissions"
+            },
+            "appearance": {
+                "theme": "Theme",
+                "dark": "Dark",
+                "dark_desc": "Original Visual",
+                "light": "Light",
+                "light_desc": "Clean Visual",
+                "system": "System",
+                "system_desc": "Auto Sync",
+                "language": "System Language"
+            },
+            "notifications": {
+                "doorbell_sound": "Doorbell Sound",
+                "push": "Push Notifications",
+                "push_desc": "Browser alerts in the background",
+                "email": "Daily Reports",
+                "email_desc": "Access summary by email",
+                "whatsapp": "WhatsApp Alerts",
+                "whatsapp_desc": "Instant mobile notification",
+                "sounds": {
+                    "classic": "Hello Classic",
+                    "modern": "Modern",
+                    "digital": "Digital",
+                    "premium": "Premium"
+                }
+            },
+            "qr_print": {
+                "pro_tip_title": "Pro Tip",
+                "pro_tip_desc": "The chosen template will be automatically applied to all QR posters you print in the Units section. You can change templates at any time without affecting already printed codes.",
+                "templates": {
+                    "classic": {
+                        "label": "Classic Hello",
+                        "desc": "Clean design with prominent blue borders."
+                    },
+                    "dark": {
+                        "label": "Midnight Premium",
+                        "desc": "Elegance on a dark background with neon blue details."
+                    },
+                    "minimal": {
+                        "label": "Modern Minimal",
+                        "desc": "Full focus on the QR Code with Scandinavian design."
+                    },
+                    "mini_cards": {
+                        "label": "Small Cards",
+                        "desc": "Grid of mini-cards for mailboxes or doorbells."
+                    },
+                    "corporate": {
+                        "label": "Corporate Blue",
+                        "desc": "Structured layout for offices and companies."
+                    }
+                }
+            }
+        },
+        "properties": {
+            "title": "Properties",
+            "subtitle": "Manage your buildings, condominiums, or office spaces.",
+            "add_btn": "New Property",
+            "modal": {
+                "title": "New Property",
+                "description": "Define the name of your new building or management space. You can associate units and residents right after.",
+                "label": "Property Name",
+                "placeholder": "e.g. Atlantic Building, Foz Condominium...",
+                "cancel": "Cancel",
+                "submit": "Register Property"
+            },
+            "stats": {
+                "title": "No properties registered yet",
+                "subtitle": "Your system needs at least one property to start registering units and visitors. Create one now?"
+            },
+            "errors": {
+                "no_org": "Preparing your access system. Please wait a few seconds.",
+                "add_failed": "Could not create property. Please try again!"
+            },
+            "limit_reached": "Free plan limit reached (1 location). Upgrade to add more!",
+            "upgrade_pro": "Get Pro Plan",
+            "total_locations": "Total Properties",
+            "access_point": "Access Point",
+            "access_points": "Access Points",
+            "manage_access_points": "Manage Access Points",
+            "add_location": "Add Property"
+        },
+        "qr_print": {
+            "scan_to_enter": "Scan to Enter",
+            "scan_instruction": "Point your phone camera at the QR code to identify yourself and ring the bell.",
+            "learn_more": "Learn more at",
+            "powered_by": "Powered By",
+            "intelligence_by": "Intelligence by Hello",
+            "system_powered_by": "System powered by",
+            "visitors": "Visitors",
+            "visitors_instruction": "Read the main QR Code to ring the bell.",
+            "identify_to_enter": "Identify to enter",
+            "no_apps_no_wait": "No apps. No waiting.",
+            "scan_to_ring": "Scan to Ring",
+            "point_camera": "Point camera to enter or ring.",
+            "secure_flow": "Secure Flow with P2P Encryption",
+            "contact_instruction": "To contact me, please scan the QR code"
+        },
+        "visitor_page": {
+            "identify": "Identify Yourself",
+            "notification_title": "New Visitor!",
+            "notification_body": "is ringing your doorbell.",
+            "status": {
+                "pending": "Pending",
+                "waiting": "Waiting",
+                "approved": "Approved",
+                "rejected": "Rejected",
+                "completed": "Completed",
+                "history": "History"
+            },
+            "at_location": "You are at",
+            "provide_name": "Please indicate your name to notify the resident.",
+            "your_name": "Your name...",
+            "announce": "Announce Arrival",
+            "hello": "Hello,",
+            "welcome_to": "Welcome to",
+            "access_point": "Access Point:",
+            "ring_doorbell": "Ring the Bell",
+            "call_answered": "Call Answered",
+            "waiting_response": "Waiting for response...",
+            "connection_active": "Connection active, write now",
+            "leave_note": "Leave a Message",
+            "note_placeholder": "Type your note for the resident here...",
+            "send_note": "Send Note",
+            "note_sent": "Message sent successfully!",
+            "note_error": "Error sending message. Try again.",
+            "video_pro_only": "Video call only available in Pro Plan",
+            "no_answer": "No one answering?",
+            "no_answer_desc": "It seems the resident is not available right now.",
+            "leave_message_anyway": "Leave a message"
+        },
+        "search": {
+            "suggestion": "Search Suggestion",
+            "hint": "You can search for",
+            "visitors": "Visitors",
+            "collaborators": "Collaborators",
+            "locations": "Properties"
+        },
+        "help": {
+            "title": "Dashboard | Help & Tutorial",
+            "subtitle": "Learn how to get the most out of Hello DOOR BELL in an instant.",
+            "footer": "The entire system operates in real-time and uses end-to-end encryption for HD videos.",
+            "pwa_banner": {
+                "title": "📲 Install App on your phone",
+                "description": "Hello works like a native app! Install on your phone to receive doorbell notifications and answer visitors anywhere.",
+                "step1": "Open in browser",
+                "step2": "Add to home screen",
+                "step3": "Turn on notifications",
+                "install_btn": "Install Now"
+            },
+            "step1": {
+                "title": "1. Space Management",
+                "description": "The first step is defining where people will arrive. Create your main Property, then add different Access Units (e.g. Main Door, Garage Gate, Annex).",
+                "tip": "You can click the \"Pencil\" button next to the name of spaces in Tables to edit their name at any time.",
+                "link": "Manage Properties"
+            },
+            "step2": {
+                "title": "2. Sharing Control",
+                "description": "You don't have to manage access alone. Go to Saved People to add family or staff. You can now generate an Invite Link (Token) and send it via message or email — hassle-free!",
+                "tip": "Sharing via link is instant. The new member just needs to open the URL and create their password to enter.",
+                "link": "Manage Residents"
+            },
+            "step3": {
+                "title": "3. Generating Magic Keys (QR)",
+                "description": "Inside your Units pages, click a space and press generate Invite. Name the Visitor and print or send them the created QR Code. This is what the person scans at the door to announce themselves.",
+                "link": "View my Units"
+            },
+            "step4": {
+                "title": "4. Answering the Door (Chat and Video)",
+                "description": "When a visitor rings the bell, they appear in your People at the Door list. The interface is fluid and operates in real-time.",
+                "bullet1": "Open the Chat to interact instantly with the visitor.",
+                "bullet2": "Click on 🎥 Call to start the Minimalist HD Video Call.",
+                "bullet3": "The video interface is clean: it focuses only on the image and the hang-up button.",
+                "bullet4": "Finish by clicking Approve or Reject Access.",
+                "link": "Monitor Access"
+            },
+            "step5": {
+                "title": "5. Mobile App (PWA)",
+                "description": "HELLO is a native app in disguise. No App Store needed.",
+                "bullet1": "Open the link of this panel in your phone browser and tap Add to home screen.",
+                "bullet2": "Allow access to Notifications.",
+                "bullet3": "Whenever the door is activated in the street, the App automatically turns on the screen, vibrates and sounds an alert on your phone!"
+            },
+            "step6": {
+                "title": "6. The Visitor's Perspective",
+                "description": "While you are inside, it matters to know what is happening in the street.",
+                "bullet1": "No Apps: The visitor just scans the QR you printed (iOS/Android).",
+                "bullet2": "Takes a selfie and enters the digital Waiting Room.",
+                "bullet3": "If you are late, they have a 🔔 Ring again button (10 s cooldown) that resends the alert to your phone."
+            }
+        },
+        "auth": {
+            "login": {
+                "title": "Welcome back",
+                "subtitle": "Enter your Hello account to manage access.",
+                "google": "Sign in with Google",
+                "or_email": "Or with email",
+                "email_label": "Your Email",
+                "email_placeholder": "name@example.com",
+                "password_label": "Password",
+                "password_placeholder": "••••••••",
+                "forgot_password": "Forgot password?",
+                "submit": "Enter Dashboard",
+                "no_account": "Don't have an account?",
+                "create_account": "Create a free account",
+                "remember_me": "Remember me"
+            },
+            "register": {
+                "title": "Create New Hello Account",
+                "subtitle": "Activate your digital doorbell and start managing access.",
+                "selected_plan": "Selected Plan",
+                "google": "Use Google account",
+                "or_email": "Or by email",
+                "org_label": "What are you managing?",
+                "org_placeholder": "e.g. My Home / Solar Building",
+                "name_label": "Your Name",
+                "name_placeholder": "First Name",
+                "email_label": "Your Email",
+                "password_label": "Set Password",
+                "password_placeholder": "Minimum 6 characters",
+                "submit": "Create Free Account",
+                "have_account": "Already have an account?",
+                "login": "Login here"
+            }
+        },
+        "landing": {
+            "hero": {
+                "badge": "Remote Doorbell",
+                "title": "Your Doorbell, anywhere.",
+                "subtitle": "Answer your door from your phone, wherever you are. A premium digital solution for homes and businesses, with no hardware or complex installation required.",
+                "cta": "Get Started Now",
+                "secondary": "How it Works"
+            },
+            "features": {
+                "badge": "Why hello?",
+                "title": "Simple. Digital. Remote.",
+                "subtitle": "Replace your traditional doorbell with a smart solution that follows you everywhere.",
+                "card1": {
+                    "title": "Instant Setup",
+                    "desc": "Print your hello QR Code and place it on your door. Your smartphone becomes your personal intercom."
+                },
+                "card2": {
+                    "title": "Video & Voice",
+                    "desc": "See and talk to whoever rings the bell in real-time, with total privacy."
+                },
+                "card3": {
+                    "title": "Call History",
+                    "desc": "Always know who looked for you, with date and time records for each call."
+                },
+                "card4": {
+                    "title": "Dedicated App",
+                    "desc": "Take Hello anywhere in your pocket. Install our PWA app and receive lightning-fast notifications whenever someone rings the door.",
+                    "cta": "Try it Now"
+                }
+            },
+            "cta": {
+                "title": "Your space deserves the best.",
+                "button": "Create Free Account"
+            },
+            "support": {
+                "title_prefix": "Support the ",
+                "title_highlight": "Development",
+                "title_suffix": ".",
+                "description": "Hello is independently maintained. Your support helps keep the servers active and develop new features.",
+                "button": "Support on Buy Me a Coffee"
+            },
+            "pricing": {
+                "badge": "Support",
+                "title": "Support the Project",
+                "subtitle": "Hello is independently maintained. Your support helps keep the servers active.",
+                "cta": "Support on Buy Me a Coffee"
+            },
+            "footer": {
+                "made_with": "Made with Passion",
+                "rights": "© 2026 Hello. All rights reserved."
+            }
+        },
+        "onboarding": {
+            "welcome_title": "Welcome to Hello!",
+            "welcome_desc": "Let's set up your first access point to start receiving visitors.",
+            "hint_properties": "Click here to create your first Property (e.g. My Home).",
+            "hint_add_property": "Create your building or management space here.",
+            "understood": "Understood!"
+        },
+        "pwa": {
+            "install_btn": "Install App",
+            "install_title": "Install Hello on your phone",
+            "install_desc": "Answer the door and get instant alerts anywhere.",
+            "whatsapp_share": "Share via WhatsApp",
+            "copy_link": "Copy Direct Link",
+            "share_message": "Hi! Install the Hello Doorbell app to answer your door on your phone: "
+        }
+    }
+}
