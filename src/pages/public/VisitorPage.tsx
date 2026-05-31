@@ -23,6 +23,7 @@ export function VisitorPage() {
     const [isSending, setIsSending] = useState(false);
     const [activeVideoCallUrl, setActiveVideoCallUrl] = useState<string | null>(null);
     const [ringCooldown, setRingCooldown] = useState(0);
+    const [doorbellSoundUrl, setDoorbellSoundUrl] = useState('/Ring01.mp3');
     const audioRef = useRef<HTMLAudioElement | null>(null);
 
     // Offline Note states
@@ -249,6 +250,18 @@ export function VisitorPage() {
             setInvitation(data);
             setVisitorName(data.visitor_name);
             setStatus('ready');
+
+            // Fetch custom doorbell sound
+            let orgId = null;
+            if (data.unit?.property) {
+                orgId = Array.isArray(data.unit.property) 
+                    ? data.unit.property[0]?.organization_id 
+                    : data.unit.property.organization_id;
+            }
+            if (orgId) {
+                const { data: soundUrl } = await supabase.rpc('get_org_doorbell_sound', { p_org_id: orgId });
+                if (soundUrl) setDoorbellSoundUrl(soundUrl);
+            }
         } catch (error) {
             console.error('Error validating token:', error);
             setStatus('invalid');
@@ -270,6 +283,12 @@ export function VisitorPage() {
 
             setUnitData(data);
             setStatus('identification');
+
+            // Fetch custom doorbell sound
+            if (data.property?.organization_id) {
+                const { data: soundUrl } = await supabase.rpc('get_org_doorbell_sound', { p_org_id: data.property.organization_id });
+                if (soundUrl) setDoorbellSoundUrl(soundUrl);
+            }
         } catch (error) {
             console.error('Error fetching unit info:', error);
             setStatus('invalid');
@@ -671,7 +690,7 @@ export function VisitorPage() {
             )}
             
             {/* Hidden audio element for reliable mobile playback */}
-            <audio ref={audioRef} src="/Ring01.mp3" preload="auto" />
+            <audio ref={audioRef} src={doorbellSoundUrl} preload="auto" />
         </div>
     );
 
