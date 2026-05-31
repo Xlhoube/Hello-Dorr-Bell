@@ -90,15 +90,16 @@ export function Residents() {
 
         try {
             const { error } = await supabase.rpc('remove_organization_member', {
-                member_id: id
+                p_member_id: id
             });
 
             if (error) throw error;
             fetchResidents();
             showToast(t('common.delete_success', 'Removido com sucesso!'), 'success');
-        } catch (error) {
+        } catch (error: any) {
             console.error('Error removing resident:', error);
-            showToast(t('residents.delete_error', 'Erro ao remover membro.'), 'error');
+            const errorMsg = error?.message || 'Erro desconhecido da base de dados';
+            showToast(`${t('residents.delete_error', 'Erro ao remover membro.')} Detalhe: ${errorMsg}`, 'error');
         }
     };
 

@@ -1,8 +1,11 @@
 -- ==========================================
--- HELLO APP - REMOVE ORGANIZATION MEMBER RPC
+-- HELLO APP - REMOVE ORGANIZATION MEMBER RPC (FIXED)
 -- ==========================================
 
-CREATE OR REPLACE FUNCTION remove_organization_member(member_id uuid)
+-- Remover a função antiga para evitar ambiguidades
+DROP FUNCTION IF EXISTS public.remove_organization_member(uuid);
+
+CREATE OR REPLACE FUNCTION public.remove_organization_member(p_member_id uuid)
 RETURNS void AS $$
 DECLARE
     caller_org_id uuid;
@@ -17,16 +20,19 @@ BEGIN
     -- Obter a org_id do membro alvo
     SELECT organization_id INTO target_org_id
     FROM public.profiles
-    WHERE id = member_id;
+    WHERE id = p_member_id;
 
     -- Verificar permissões (deve ser super_admin e da mesma organização)
     IF caller_role != 'super_admin' OR caller_org_id IS NULL OR caller_org_id != target_org_id THEN
-        RAISE EXCEPTION 'Não tem permissões para remover este membro.';
+        RAISE EXCEPTION 'Ação bloqueada: Não tem permissões de super_admin para remover membros ou as organizações não coincidem.';
     END IF;
 
     -- Remover o membro da organização
     UPDATE public.profiles
     SET organization_id = NULL, role = 'user'
-    WHERE id = member_id;
+    WHERE id = p_member_id;
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
+
+-- Forçar atualização da cache do PostgREST
+NOTIFY pgrst, 'reload schema';
