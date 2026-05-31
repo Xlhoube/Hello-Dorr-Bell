@@ -38,7 +38,7 @@ $$ language plpgsql security definer;
 drop trigger if exists visitor_notification_trigger on public.visitors;
 
 create trigger visitor_notification_trigger
-  after insert or update of status on public.visitors
+  after insert or update of updated_at on public.visitors
   for each row
   when (NEW.status = 'pending')
   execute function public.trigger_notify_resident();
