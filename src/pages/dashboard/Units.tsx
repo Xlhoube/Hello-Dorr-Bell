@@ -171,13 +171,7 @@ export function Units() {
                     <p className="text-sm text-[var(--text-secondary)] font-medium">
                         {t('units.subtitle', { defaultValue: 'Gira os espaços de acesso (ex: Porta Principal, Garagem, Anexo).' })}
                     </p>
-                    {subscription.tier === 'free' && (
-                        <div className="mt-2">
-                             <span className="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest bg-amber-500/10 text-amber-500 border border-amber-500/20">
-                                Plano Free Limited
-                            </span>
-                        </div>
-                    )}
+
                 </div>
             </div>
 
