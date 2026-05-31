@@ -89,10 +89,9 @@ export function Residents() {
         if (!confirmed) return;
 
         try {
-            const { error } = await supabase
-                .from('profiles')
-                .update({ organization_id: null, role: 'user' })
-                .eq('id', id);
+            const { error } = await supabase.rpc('remove_organization_member', {
+                member_id: id
+            });
 
             if (error) throw error;
             fetchResidents();
