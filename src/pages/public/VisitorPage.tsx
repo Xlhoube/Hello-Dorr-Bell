@@ -34,6 +34,11 @@ export function VisitorPage() {
         if (ringCooldown > 0 || !visitorRecordId) return;
         setRingCooldown(10); // 10s cooldown
         
+        try {
+            const audio = new Audio('/Ring01.mp3');
+            audio.play().catch(console.error);
+        } catch(e) {}
+        
         await supabase.from('visitors').update({ updated_at: new Date().toISOString() }).eq('id', visitorRecordId);
         
         const interval = setInterval(() => {
@@ -278,6 +283,9 @@ export function VisitorPage() {
         setStatus('loading');
 
         try {
+            const audio = new Audio('/Ring01.mp3');
+            audio.play().catch(console.error);
+            
             let orgId = null;
             let currentUnitId = null;
 
