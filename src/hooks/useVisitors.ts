@@ -142,18 +142,6 @@ export function useVisitors(t: any, showToast: any, confirm: any, searchParams: 
                         filter: `organization_id=eq.${profile.organization_id}`
                     }, (payload) => {
                         if (payload.eventType === 'INSERT') {
-                            if ('Notification' in window && Notification.permission === 'granted') {
-                                new Notification(`🔔 ${t('visitor_page.notification_title')}`, {
-                                    body: `${payload.new.visitor_name} ${t('visitor_page.notification_body')}`,
-                                    icon: '/logo.png',
-                                });
-                            }
-                            try {
-                                const soundToPlay = doorbellSoundRef.current || localStorage.getItem('hello-doorbell-sound') || '/Ring01.mp3';
-                                const audio = new Audio(soundToPlay);
-                                audio.play().catch(e => console.log('Áudio bloqueado:', e));
-                            } catch(e) {}
-
                             fetchVisitors(true);
                         } else if (payload.eventType === 'UPDATE') {
                             setVisitors(prev => prev.map(v => v.id === payload.new.id ? { ...v, ...payload.new } : v));
@@ -162,18 +150,8 @@ export function useVisitors(t: any, showToast: any, confirm: any, searchParams: 
                                 setSelectedVisitor((prev: any) => ({ ...prev, ...payload.new }));
                             }
 
-                            const newUpdate = payload.new.updated_at;
-                            const oldUpdate = payload.old?.updated_at;
-                            const wasPinged = oldUpdate ? newUpdate !== oldUpdate : true;
-                            const isStillWaiting = ['pending', 'waiting'].includes(payload.new.status);
                             
-                            if (wasPinged && isStillWaiting) {
-                                try {
-                                    const soundToPlay = doorbellSoundRef.current || localStorage.getItem('hello-doorbell-sound') || '/Ring01.mp3';
-                                    const audio = new Audio(soundToPlay);
-                                    audio.play().catch(e => console.log('Som bloqueado:', e));
-                                } catch(e) {}
-                            }
+                            // Audio ring logic removed here to avoid double ring with DashboardLayout
                         } else if (payload.eventType === 'DELETE') {
                             setVisitors(prev => prev.filter(v => v.id === payload.old.id));
                             if (selectedVisitorRef.current?.id === payload.old.id) {

@@ -5,6 +5,7 @@ import { ShieldAlert, Loader2, BellRing, XCircle, Send, Video, User, Mic, Messag
 import { Logo } from '../../components/ui/Logo';
 import { supabase } from '../../lib/supabase';
 import { VideoCall } from '../../components/video/VideoCall';
+import { useRef } from 'react';
 
 export function VisitorPage() {
     const { t } = useTranslation();
@@ -22,6 +23,7 @@ export function VisitorPage() {
     const [isSending, setIsSending] = useState(false);
     const [activeVideoCallUrl, setActiveVideoCallUrl] = useState<string | null>(null);
     const [ringCooldown, setRingCooldown] = useState(0);
+    const audioRef = useRef<HTMLAudioElement | null>(null);
 
     // Offline Note states
     const [isLeavingNote, setIsLeavingNote] = useState(false);
@@ -34,10 +36,10 @@ export function VisitorPage() {
         if (ringCooldown > 0 || !visitorRecordId) return;
         setRingCooldown(10); // 10s cooldown
         
-        try {
-            const audio = new Audio('/Ring01.mp3');
-            audio.play().catch(console.error);
-        } catch(e) {}
+        if (audioRef.current) {
+            audioRef.current.currentTime = 0;
+            audioRef.current.play().catch(e => console.log('Audio blocked:', e));
+        }
         
         await supabase.from('visitors').update({ updated_at: new Date().toISOString() }).eq('id', visitorRecordId);
         
@@ -277,15 +279,17 @@ export function VisitorPage() {
     const handleAnnounceArrival = async (e?: React.FormEvent) => {
         if (e) e.preventDefault();
         
+        if (audioRef.current) {
+            audioRef.current.currentTime = 0;
+            audioRef.current.play().catch(e => console.log('Audio blocked:', e));
+        }
+
         const finalName = visitorName.trim();
         if (!finalName) return;
 
         setStatus('loading');
 
         try {
-            const audio = new Audio('/Ring01.mp3');
-            audio.play().catch(console.error);
-            
             let orgId = null;
             let currentUnitId = null;
 
@@ -665,6 +669,9 @@ export function VisitorPage() {
             {activeVideoCallUrl && (
                 <VideoCall url={activeVideoCallUrl} displayName={visitorName} onLeave={() => setActiveVideoCallUrl(null)} />
             )}
+            
+            {/* Hidden audio element for reliable mobile playback */}
+            <audio ref={audioRef} src="/Ring01.mp3" preload="auto" />
         </div>
     );
 
