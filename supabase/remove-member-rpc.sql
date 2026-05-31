@@ -1,8 +1,7 @@
 -- ==========================================
--- HELLO APP - REMOVE ORGANIZATION MEMBER RPC (FIXED)
+-- HELLO APP - REMOVE ORGANIZATION MEMBER RPC (FIXED ROLE)
 -- ==========================================
 
--- Remover a função antiga para evitar ambiguidades
 DROP FUNCTION IF EXISTS public.remove_organization_member(uuid);
 
 CREATE OR REPLACE FUNCTION public.remove_organization_member(p_member_id uuid)
@@ -28,8 +27,9 @@ BEGIN
     END IF;
 
     -- Remover o membro da organização
+    -- Nota: Mantemos 'resident' para não violar o constraint `profiles_role_check`
     UPDATE public.profiles
-    SET organization_id = NULL, role = 'user'
+    SET organization_id = NULL, role = 'resident'
     WHERE id = p_member_id;
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
