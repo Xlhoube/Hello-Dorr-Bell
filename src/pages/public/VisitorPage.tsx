@@ -549,7 +549,7 @@ export function VisitorPage() {
                                         const isVideoMessage = msg.content.startsWith('[SISTEMA_VIDEO]:');
                                         if (isVideoMessage) {
                                             // Ler exatamente a URL ÚNICA que o residente partilhou da API
-                                            let url = msg.content.replace('[SISTEMA_VIDEO]:', '');
+                                            const url = msg.content.replace('[SISTEMA_VIDEO]:', '');
                                             if (url.includes('jit.si') || url.includes('ffmuc')) return null;
                                             return (
                                                 <div key={msg.id || idx} className="flex justify-center my-6 w-full">

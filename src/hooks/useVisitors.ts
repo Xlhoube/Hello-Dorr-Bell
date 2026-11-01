@@ -212,7 +212,6 @@ export function useVisitors(t: any, showToast: any, confirm: any, searchParams: 
         if (!confirmed) return;
         
         try {
-            let currentOrgId;
             const { data: { user } } = await supabase.auth.getUser();
             if (!user) return;
             const { data: profile } = await supabase
@@ -220,7 +219,7 @@ export function useVisitors(t: any, showToast: any, confirm: any, searchParams: 
                 .select('organization_id')
                 .eq('id', user.id)
                 .single();
-            currentOrgId = profile?.organization_id;
+            const currentOrgId = profile?.organization_id;
 
             if (!currentOrgId) return;
 

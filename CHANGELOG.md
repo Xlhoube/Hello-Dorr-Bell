@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.62] - 2026-11-01
+### Corrigido & Melhorado
+- **Segurança (.env & .gitignore):** Adicionada regra `.env*` ao `.gitignore` e removido o ficheiro `.env` do índice do Git para evitar exposição acidental de credenciais.
+- **ESLint (Flat Config):** Atualizada a configuração para `eslint.config.js` compatível com TypeScript-ESLint v7, corrigidos pequenos erros de sintaxe e ajustado o script de `lint` no `package.json`.
+- **Testes Unitários (Vitest):** Configurada a infraestrutura de testes unitários com `vitest` e adicionada suite de testes de validação básica com execução limpa (`npm test`).
+- **Webhook SQL:** Ajustada a instrução de segurança em `notifications-webhook.sql` para indicar claramente o uso da `SERVICE_ROLE_KEY`.
+
 ## [1.1.41] - 2026-03-22
 ### Corrigido
 - **Segurança (RLS):** Restauradas as políticas de acesso à tabela `organizations` que impediam novos registos.

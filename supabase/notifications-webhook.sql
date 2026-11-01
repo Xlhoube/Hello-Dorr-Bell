@@ -26,7 +26,7 @@ begin
     body := request_body,
     headers := json_build_object(
       'Content-Type', 'application/json',
-      'Authorization', 'Bearer ' -- O MODELO IRÁ ADICIONAR O SERVICE_ROLE_KEY NO CHAT
+      'Authorization', 'Bearer YOUR_SUPABASE_SERVICE_ROLE_KEY' -- Substituir pela SERVICE_ROLE_KEY do Supabase
     )::jsonb
   );
 

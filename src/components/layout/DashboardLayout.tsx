@@ -159,7 +159,9 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
                             const doorbellSound = profile?.doorbell_sound || localStorage.getItem('hello-doorbell-sound') || '/Ring01.mp3';
                             const audio = new Audio(doorbellSound);
                             audio.play().catch(() => {});
-                        } catch(e) {}
+                        } catch {
+                            // Audio playback might be restricted before user interaction
+                        }
                         if ("Notification" in window && Notification.permission === "granted") {
                             new Notification(t('common.push_notifications.doorbell_title'), {
                                 body: t('common.push_notifications.doorbell_body', { 
